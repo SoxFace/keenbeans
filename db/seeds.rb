@@ -3,21 +3,21 @@ Group.destroy_all
 
 #create users
 User.create(name: 'Liv',
-            email: 'awesome_liv@gmail.com',
+            email: 'test_email+sonya@gmail.com',
             about: "Hi, I'm Liv! I like movies",
-            twitter: 'https://twitter.com/livcg1',
-            linkedin: 'https://www.linkedin.com/in/livcg',
+            twitter: '',
+            linkedin: '',
             facebook: '',
-            github: 'https://github.com/livcg',
+            github: '',
             site: '',
             address: '2000')
 User.create(name: 'Sonya',
-            email: 'sonyacorcoran@gmail.com',
+            email: 'test_email+sonya@gmail.com',
             about: "Hi, I'm Sonya! I like movies",
             twitter: '',
             linkedin: '')
 User.create(name: 'Olivia',
-            email: 'sonyacorcoran@gmail.com',
+            email: 'test_email+olivia@gmail.com',
             about: "Hi, I'm Olivia!",
             twitter: '',
             linkedin: '',
@@ -27,7 +27,7 @@ User.create(name: 'Olivia',
             address: '2001')
 
 User.create(name: 'Ava',
-            email: 'sonyacorcoran@gmail.com',
+            email: 'test_email+ava@gmail.com',
             about: "Hi, I'm Ava!",
             twitter: '',
             linkedin: '',
