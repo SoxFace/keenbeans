@@ -27,7 +27,6 @@ a {
 /* Headers */
 h1 {
     color:#9A5D89;
-    padding: 10px;
     padding-top: 10px;
 }
 
@@ -129,6 +128,10 @@ footer {
 main {
   max-width: 960px;
   margin: 30px auto 0;
+
+  &.groups.index {
+    max-width: 100%
+  }
 }
 
 .form-group {

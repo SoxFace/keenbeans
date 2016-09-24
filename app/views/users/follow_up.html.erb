@@ -1,3 +1,5 @@
+<h1>Catchup feedback </h1>
+<p> We hope you had a great time on your Coffee Catchup with Liv this week. To help us provide the best experience possible we'd like some feedback from you. </p>
 <%= form_for(@user) do |f| %>
     <div class="form-group">
       <%= f.label 'Did you two catch up?' %><br>
@@ -7,20 +9,21 @@
       <%= f.label 'How was the catch up?' %><br>
       <%= f.text_area :email, class: 'form-control' %>
     </div>
-    <div class="form-group">      
-	  We'd love to match you again for next week.  Are you keen?
-      <div style="margin-left: 50px"> 
-      	<br/>
-		<%= radio_button_tag(:yes, "Yes") %>
-		<%= label_tag(:age_child, "Absolutely!") %><br/>
-		<%= radio_button_tag(:yes, "No") %>
-		<%= label_tag(:age_child, "Not right now") %>
-	  </div>
+    <p>
+      We'd love to match you again for next week.  Are you keen?
+    </p>
+    <div class="form-group">
+      <div>
+    		<%= radio_button_tag(:yes, "Yes") %>
+    		<%= label_tag(:age_child, "Absolutely!") %><br/>
+    		<%= radio_button_tag(:yes, "No") %>
+    		<%= label_tag(:age_child, "Not right now") %>
+  	  </div>
     </div>
 
     <div class="actions">
       <button class='btn btn-default'%>
         Submit
 	  </button>
-    </div>    
+    </div>
 <% end %>
