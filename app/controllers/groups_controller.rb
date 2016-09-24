@@ -5,6 +5,9 @@ class GroupsController < ApplicationController
   # GET /groups.json
   def index
     @groups = Group.all
+
+    @liv_groups = HTTParty.get("https://api.meetup.com/self/groups?key=#{Rails.application.secrets.meetup_api_key}").body
+    @json_groups = JSON.parse(@liv_groups)
   end
 
   # GET /groups/1

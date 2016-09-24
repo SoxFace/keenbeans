@@ -27,3 +27,10 @@
 <br>
 
 <%= link_to 'New Group', new_group_path %>
+
+<h2>Liv's groups</h2>
+<ul>
+  <% @json_groups.each do |group| %> 
+    <li><%= group['name'] %></li>
+  <% end %>
+</ul>

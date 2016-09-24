@@ -28,6 +28,8 @@ gem 'mailgun-ruby', '~> 1.1'
 gem 'simple_form'
 gem 'figaro'
 gem 'acts-as-taggable-on', '~> 4.0'
+gem 'httparty'
+gem 'rMeetup'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
