@@ -2,11 +2,6 @@ User.destroy_all
 Group.destroy_all
 
 #create users
-User.create(name: 'Sonya',
-            email: 'sonyacorcoran@gmail.com',
-            about: "Hi, I'm Sonya! I like movies",
-            twitter: '',
-            linkedin: '',
 User.create(name: 'Liv',
             email: 'awesome_liv@gmail.com',
             about: "Hi, I'm Liv! I like movies",
@@ -16,7 +11,11 @@ User.create(name: 'Liv',
             github: 'https://github.com/livcg',
             site: '',
             address: '2000')
-
+User.create(name: 'Sonya',
+            email: 'sonyacorcoran@gmail.com',
+            about: "Hi, I'm Sonya! I like movies",
+            twitter: '',
+            linkedin: '')
 User.create(name: 'Olivia',
             email: 'sonyacorcoran@gmail.com',
             about: "Hi, I'm Olivia!",
@@ -45,6 +44,6 @@ Group.create(name: "Sydney-Volleyball-in-the-Park",
              description: "We will be playing at the same spot as Sunday. Have lots of fun playing volleyball!",
              image: "https://a248.e.akamai.net/secure.meetupstatic.com/photo_api/event/rx226x172/sg4497365dbe/191253102.jpeg")
 
-Group.create(name: 'Getting Things Done - Sydney Style',
+Group.create(name: 'Getting Things Done',
              description: "A group to meet and discuss the \"Getting Things Done\" methodology. Swapping stories, tools, techniques and learning from each other.",
              image: 'https://a248.e.akamai.net/secure.meetupstatic.com/photo_api/event/rx226x172/sg4497365dbe/233589242.jpeg')
