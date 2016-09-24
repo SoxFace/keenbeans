@@ -75,6 +75,10 @@ class UsersController < ApplicationController
     end
   end
 
+  def follow_up
+    @user = User.new
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user
