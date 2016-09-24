@@ -29,8 +29,20 @@
 <%= link_to 'New Group', new_group_path %>
 
 <h2>Liv's groups</h2>
-<ul>
-  <% @json_groups.each do |group| %> 
-    <li><%= group['name'] %></li>
-  <% end %>
-</ul>
+<div class="row">
+  <ul>
+    <% @json_groups.each do |group| %> 
+      
+      <div class="col-md-4">
+        <div class="card text-xs-center">
+          <img class="card-img-top" src="https://a248.e.akamai.net/secure.meetupstatic.com/photos/event/b/7/c/c/global_431687052.jpeg" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title"><%= group['name'] %></h4>
+            <h4 class="card-text"><%= group['members'] %> potential keenbeans to catchup with</h4>
+            <a href="#" class="btn btn-primary">MATCH ME</a>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </ul>
+   </div>
