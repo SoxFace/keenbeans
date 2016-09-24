@@ -19,4 +19,11 @@ class User < ActiveRecord::Base
   acts_as_taggable_on :interests
   validates :name, :email, presence: true
   validates :email, uniqueness: true
+  validates_format_of :address, with: /\d{4}/
+
+  before_validation :prepare_address
+
+  def prepare_address
+    self.address.strip!
+  end
 end
