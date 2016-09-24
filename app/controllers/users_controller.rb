@@ -13,7 +13,7 @@ class UsersController < ApplicationController
     RestClient.post "https://api:#{Rails.application.secrets.mailgun_api_key}"\
     "@api.mailgun.net/v3/sandbox6f38c47038a64b02b8e1a09650b98a67.mailgun.org/messages",
     :from => "Mailgun Sandbox <postmaster@sandbox6f38c47038a64b02b8e1a09650b98a67.mailgun.org>",
-    :to => "#{@user.email}",
+    :to => "lucybain@gmail.com",
     :subject => "Hello #{@user.name}",
     :text => "Congratulations #{@user.name}, you are now a keenbean"
   end
@@ -22,7 +22,7 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
     @user = User.first
-    # send_simple_message
+    send_simple_message
   end
 
   # GET /users/new
