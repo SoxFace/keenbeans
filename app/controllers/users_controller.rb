@@ -1,3 +1,5 @@
+require 'rest-client'
+
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
@@ -5,6 +7,15 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
+  end
+
+  def send_simple_message
+    RestClient.post "https://api:key-a6fad4e81b5d271d06a39b6826a13c69"\
+    "@api.mailgun.net/v3/sandbox6f38c47038a64b02b8e1a09650b98a67.mailgun.org/messages",
+    :from => "Mailgun Sandbox <postmaster@sandbox6f38c47038a64b02b8e1a09650b98a67.mailgun.org>",
+    :to => "#{@user.name} <#{@user.email}>",
+    :subject => "Hello #{@user.name}",
+    :text => "Congratulations #{@user.name}, you are now a keenbean"
   end
 
   # GET /users/1
@@ -25,6 +36,7 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
     @user = User.new(user_params)
+    send_simple_message
 
     respond_to do |format|
       if @user.save
