@@ -17,6 +17,9 @@
 #
 
 class User < ActiveRecord::Base
+  has_many :memberships
+  has_many :groups, through: :memberships
+
   acts_as_taggable_on :interests
   validates :name, :email, presence: true
   validates :email, uniqueness: true
