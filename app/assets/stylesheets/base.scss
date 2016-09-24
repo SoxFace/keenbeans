@@ -3,7 +3,7 @@ html,
 body {
     background-color: #232229;
     color: #E7F7F1;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 30px;
   padding-bottom: 70px;
 }
@@ -113,6 +113,20 @@ footer {
     }
 }
 
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.form-group {
+  max-width: 480px;
+}
+
+form p {
+      border-top: 1px dashed white;
+    margin-top: 50px;
+    padding-top: 40px;
+}
 .card-title {
   color: #9A5D89;
 }
