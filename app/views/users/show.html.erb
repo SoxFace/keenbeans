@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-md-4">
-    picture here
+    <%= image_tag("liv.jpg", class: "profile-pic") %>
   </div>
   <div class="col-md-8">
     <h1><%= @user.name %></h1>
@@ -8,48 +8,44 @@
     <p>
       <%= @user.about %>
     </p>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-12">
-  <p>
-  <%= fa_icon "envelope" %>
-  <%= mail_to(@user.email) %>
-</p>
-<% if @user.twitter.present? %>
-<p>
-  <%= fa_icon "twitter" %>
-  <%= link_to(@user.twitter.sub(/^https?\:\/\//, '').sub(/^www./,''), @user.twitter) %>
-</p>
-<% end %>
+    <p>
+      <%= fa_icon "envelope" %>
+      <%= mail_to(@user.email) %>
+    </p>
+    <% if @user.twitter.present? %>
+    <p>
+      <%= fa_icon "twitter" %>
+      <%= link_to(@user.twitter.sub(/^https?\:\/\//, '').sub(/^www./,''), @user.twitter) %>
+    </p>
+    <% end %>
 
-<% if @user.linkedin.present? %>
-<p>
-  <%= fa_icon "linkedin" %>
-  <%= link_to(@user.linkedin.sub(/^https?\:\/\//, '').sub(/^www./,''), @user.linkedin) %>
-</p>
-<% end %>
+    <% if @user.linkedin.present? %>
+    <p>
+      <%= fa_icon "linkedin" %>
+      <%= link_to(@user.linkedin.sub(/^https?\:\/\//, '').sub(/^www./,''), @user.linkedin) %>
+    </p>
+    <% end %>
 
-<% if @user.facebook.present? %>
-<p>
-  <%= fa_icon "facebook" %>
-  <%= link_to(@user.facebook.sub(/^https?\:\/\//, '').sub(/^www./,''), @user.facebook) %>
-</p>
-<% end %>
+    <% if @user.facebook.present? %>
+    <p>
+      <%= fa_icon "facebook" %>
+      <%= link_to(@user.facebook.sub(/^https?\:\/\//, '').sub(/^www./,''), @user.facebook) %>
+    </p>
+    <% end %>
 
-<% if @user.github.present? %>
-<p>
-  <%= fa_icon "github" %>
-  <%= link_to(@user.github.sub(/^https?\:\/\//, '').sub(/^www./,''), @user.github) %>
-</p>
-<% end %>
+    <% if @user.github.present? %>
+    <p>
+      <%= fa_icon "github" %>
+      <%= link_to(@user.github.sub(/^https?\:\/\//, '').sub(/^www./,''), @user.github) %>
+    </p>
+    <% end %>
 
-<% if @user.site.present? %>
-<p>
-  <strong>Site:</strong>
-  <%= link_to(@user.site.sub(/^https?\:\/\//, '').sub(/^www./,''), @user.site) %>
-</p>
-<% end %>
+    <% if @user.site.present? %>
+    <p>
+      <strong>Site:</strong>
+      <%= link_to(@user.site.sub(/^https?\:\/\//, '').sub(/^www./,''), @user.site) %>
+    </p>
+    <% end %>
 
   </div>
 </div>
