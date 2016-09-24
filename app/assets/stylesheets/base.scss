@@ -1,0 +1,114 @@
+
+html,
+body {
+    background-color: #232229;
+    color: #E7F7F1;
+    font-size: 15px;
+    line-height: 30px;
+  padding-bottom: 70px;
+}
+
+/* Landing Page Picture */
+
+.jumbotron {
+    background-color:transparent !important;
+}
+
+
+/* Headers */
+h1 {
+    color:#9A5D89;
+    padding: 10px;
+    padding-top: 10px;
+}
+
+/* Buttons */
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
+.btn-primary {
+    background: #9FAC64;
+    color: #ffffff;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #DCE7AF;
+}
+
+.btn-primary:active, .btn-primary.active {
+    background: #EAFBDB;
+    box-shadow: none;
+}
+
+/* Navbar */
+
+.navbar-inverse {
+    background-color: #4F454D;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    border: none;
+
+}
+
+.navbar-inverse .navbar-brand {
+    color: #FDFFFA;
+}
+
+.navbar-inverse .navbar-toggle {
+    color: #FDFFFA;
+    border: none;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: #69e083;
+    border: none;
+}
+
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+  height: 450px;
+}
+
+/* Set gray background color and 100% height */
+.sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+}
+
+/* Change Footer */
+footer {
+      background-color: #9A5D89;
+      color: white;
+      padding: 20px;
+      width: 100%;
+      margin: 0px;
+}
+
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {
+      height: auto;
+    }
+}
