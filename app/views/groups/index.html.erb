@@ -1,16 +1,13 @@
-<p id="notice"><%= notice %></p>
-
 <h1>Groups near you</h1>
 <div class="row groups-listing">
   <ul>
     <% @groups.each do |group| %>
 
       <div class="col-md-4">
-        <div class="card text-xs-center">
-          <%= image_tag group.image %>
+        <div class="card text-xs-center", style: style="background-image: url('<%= group.image %>')">
           <div class="card-block">
             <h4 class="card-title"><%= group['name'] %></h4>
-            <%= link_to 'MatchUp to CatchUp', new_user_path, :class => "btn btn-primary"%>
+            <%= link_to 'Sign up', new_user_path, :class => "btn btn-primary"%>
           </div>
         </div>
       </div>

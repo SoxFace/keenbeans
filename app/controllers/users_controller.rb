@@ -22,7 +22,7 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
     @user = User.first
-    send_simple_message
+    # send_simple_message
   end
 
   # GET /users/new
@@ -38,7 +38,7 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
     @user = User.new(user_params)
-    send_simple_message
+    # send_simple_message
 
     respond_to do |format|
       if @user.save
