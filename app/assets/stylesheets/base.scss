@@ -68,6 +68,10 @@ h1 {
 
 .navbar-inverse .navbar-brand {
     color: #FDFFFA;
+    width: 40px;
+    img {
+      width: 100%;
+    }
 }
 
 .navbar-inverse .navbar-toggle {
