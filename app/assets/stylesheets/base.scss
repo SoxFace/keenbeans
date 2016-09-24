@@ -8,6 +8,13 @@ body {
   padding-bottom: 70px;
 }
 
+a {
+  color: #c299b6;
+  &:hover {
+    color: #c299b6;
+  }
+}
+
 /* Landing Page Picture */
 
 .jumbotron {
