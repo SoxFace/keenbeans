@@ -13,7 +13,7 @@ class UsersController < ApplicationController
     RestClient.post "https://api:#{Rails.application.secrets.mailgun_api_key}"\
     "@api.mailgun.net/v3/sandbox6f38c47038a64b02b8e1a09650b98a67.mailgun.org/messages",
     :from => "Mailgun Sandbox <postmaster@sandbox6f38c47038a64b02b8e1a09650b98a67.mailgun.org>",
-    :to => "#{@user.name} <#{@user.email}>",
+    :to => "#{@user.email}",
     :subject => "Hello #{@user.name}",
     :text => "Congratulations #{@user.name}, you are now a keenbean"
   end
