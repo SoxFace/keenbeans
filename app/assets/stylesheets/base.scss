@@ -127,6 +127,10 @@ footer {
 main {
   max-width: 960px;
   margin: 30px auto 0;
+
+  &.groups.index {
+    max-width: 100%
+  }
 }
 
 .form-group {
