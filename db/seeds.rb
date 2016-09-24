@@ -2,13 +2,18 @@ User.destroy_all
 Group.destroy_all
 
 #create users
-User.create(name: 'Emma',
+User.create(name: 'Sonya',
             email: 'sonyacorcoran@gmail.com',
-            about: "Hi, I'm Emma! I like movies",
+            about: "Hi, I'm Sonya! I like movies",
             twitter: '',
             linkedin: '',
+User.create(name: 'Liv',
+            email: 'awesome_liv@gmail.com',
+            about: "Hi, I'm Liv! I like movies",
+            twitter: 'https://twitter.com/livcg1',
+            linkedin: 'https://www.linkedin.com/in/livcg',
             facebook: '',
-            github: '',
+            github: 'https://github.com/livcg',
             site: '',
             address: '2000')
 
